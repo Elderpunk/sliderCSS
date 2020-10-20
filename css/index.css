@@ -2,3 +2,61 @@
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
 
+body {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* Slider */
+.container {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 1fr 30px;
+}
+.container__diapositivas {
+  position: relative;
+}
+.diapositivas__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.diapositivas__item:first-child {
+  opacity: 1;
+}
+.diapositivas__item:target {
+  opacity: 1;
+}
+
+.diapositivas__item img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.menuSlider {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+.menuSlider a{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: .5em;
+    height: .5em;
+    margin: 0 .5em;
+    
+}

@@ -27,28 +27,34 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
   <body>
-    <div id="container">
-    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <!-- Header (encabezado de la página, zona superior) -->
-    <header>
-      <!-- nav (el navegador de toda la web) -->
-      <nav>
-        <a href="" class="link1">link1</a>
-        <a href="" class="link2">link2</a>
-        <a href="" class="link3">link3</a>
-        <a href="" class="link4">link4</a>
+
+
+    <!-- SLIDER solo HTML+CSS -->
+    <!-- tonto si utilizas JS -->
+    <!-- pero mu tonto -->
+    <!-- tontorron -->
+
+    <header class="container">
+      <!-- diapositivas -->
+      <ul class="container__diapositivas">
+          <li class="diapositivas__item" id="slider1">
+            <img src="img/desktop/foto1.jpg" alt="">
+          </li>
+          <li class="diapositivas__item" id="slider2">
+            <img src="img/desktop/foto2.jpg" alt="">
+          </li>
+          <li class="diapositivas__item" id="slider3">
+            <img src="img/desktop/foto3.jpg" alt="">
+          </li>
+      </ul>
+      
+      <!-- manejadores -->
+      <nav class="menuSlider">
+        <a href="#slider1" class="menuSlider__slider1"></a>
+        <a href="#slider2" class="menuSlider__slider2"></a>
+        <a href="#slider3" class="menuSlider__slider"></a>
       </nav>
     </header>
-    <!-- Main (centro de la página, zona central) -->
-    <main>
-      <!-- section y article (posibilidades dentro de main) -->
-    </main>
-    <!-- Footer (final de la página, zona inferior) -->
-    <footer>
-      <h6>&copy;Copyright</h6>
-    </footer>
-    </div>
-    <!-- *** Google Analytics *** -->
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
   </body>
 </html>
